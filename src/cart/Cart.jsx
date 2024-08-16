@@ -56,8 +56,8 @@ catch(error)
 })
 
 
- const totalPrice = value.reduce((acc,number)=>acc+number.price,0)
-    
+ const actualPrice = value.reduce((acc,number)=>acc+number.price,0)
+    const totalPrice = actualPrice.toFixed(2);
 
  useEffect(()=>{
   document.title = 'books-cart'
