@@ -63,7 +63,7 @@ const Orders = () => {
                   <td colSpan={2}>Total Amount paid</td>
                   <td className="table-warning">&#36;
                     {price
-                      ? price + tax + deliveryCharges
+                      ?  (Number(price)+tax+deliveryCharges).toFixed(2) 
                       : (Number(location.state.data)+tax+deliveryCharges).toFixed(2) }
                   </td>
                 </tr>
