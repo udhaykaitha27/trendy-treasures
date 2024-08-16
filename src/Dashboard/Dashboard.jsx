@@ -82,6 +82,7 @@ const Dashboard = () => {
     <div>
       <input className='form-control w-50 m-auto mb-4 mt-4' type='text' onChange={searchHandler} placeholder='Find your product here......' />
       <select placeholder='Filter the products' onChange={filterHandler} className='form-control w-50 m-auto mb-4'>
+        <option >Filter the products</option>
         <option value='ascending'>Low to High</option>
         <option value='descending'>High to Low</option>
       </select>
