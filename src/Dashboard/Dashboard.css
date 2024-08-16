@@ -1,0 +1,37 @@
+#books-container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    padding: 30px;
+    width: 100vw;
+    
+    
+    background-color: rgb(58, 41, 27);
+    color: aliceblue;
+    
+}
+
+#each-div
+{
+    border: 1px solid rgb(221, 123, 123);
+    border-radius: 20px;
+
+}
+#viewmore-btn
+{
+    text-decoration: none;
+}
+
+@media screen and (max-width:390px) and (max-height:700px) {
+    #books-container
+    {
+        display: flex;
+        flex-direction: column;
+        width: 440px;
+        text-align: center;
+        
+        
+    }
+    
+}

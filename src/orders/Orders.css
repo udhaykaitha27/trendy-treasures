@@ -1,0 +1,17 @@
+#order-div
+{
+    height: 700px;
+}
+@media screen and (max-width:390px) and (max-height:700px) {
+    #table-media
+    {
+        position: relative;
+        left: 0px;
+        top: 5px;
+
+    }
+    #order-div
+    {
+        width: 440px;
+    }
+}

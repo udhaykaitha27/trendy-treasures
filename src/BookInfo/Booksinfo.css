@@ -1,0 +1,28 @@
+#individual-book
+{
+    padding: 30px;
+    text-align: start;
+}
+#img-like
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+#single-image
+{
+     margin-left: -20%;
+}
+@media screen and (max-width:390px) and (max-height:700px) {
+    #single-like
+    {
+        position: relative;
+        right: 50px;
+        margin-left: 30px;
+    }
+#individual-book
+{
+    width: 440px;
+}
+
+}

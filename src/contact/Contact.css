@@ -1,0 +1,24 @@
+#contact-div
+{
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20211108/pngtree-abstract-blue-plain-background-with-modern-style-and-dynamic-lines-image_915412.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    background-repeat: repeat-y;
+    height: 100vh;
+    padding: 30px;
+    padding-left: 100px;
+}
+@media screen and (max-width : 390px) and (max-height:700px) {
+    #contact-div
+    {
+        background-image: none;
+        background-image: url('https://img.freepik.com/free-photo/contact-us-communication-support-service-assistance-concept_53876-128103.jpg?w=900&t=st=1723532314~exp=1723532914~hmac=c07d36d84780e7511512b6086d81dc032c4a691dc904eaf664c9ee8541a1e9bd');
+        background-clip: content-box;
+        background-repeat: no-repeat;
+        width: 440px;
+        
+    }
+}
