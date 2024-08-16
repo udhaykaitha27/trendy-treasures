@@ -64,7 +64,7 @@ const Orders = () => {
                   <td className="table-warning">&#36;
                     {price
                       ? price + tax + deliveryCharges
-                      : location.state.data + tax + deliveryCharges}
+                      : (Number(location.state.data)+tax+deliveryCharges).toFixed(2) }
                   </td>
                 </tr>
               </tbody>
