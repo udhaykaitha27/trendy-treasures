@@ -15,10 +15,12 @@ const navigate = useNavigate();
 
 
   const [signupdata, setSignupdata] = useState({
-    fullName: "",
-    mobile: "",
-    email: "",
-    password: "",
+    FirstName: "",
+    LastName:"",
+    PhoneNumber: "",
+    Email: "",
+    Password: "",
+
   });
 
   const inputHandler = (e) => {
@@ -31,7 +33,7 @@ const navigate = useNavigate();
 
   const signuphandler = async() => 
   {
-    if(!signupdata.fullName || !signupdata.email || !signupdata.mobile || !signupdata.password)
+    if(!signupdata.FirstName || !signupdata.Email || !signupdata.PhoneNumber || !signupdata.Password || !signupdata.LastName)
     {
       return toast.error('Please provide all the feilds!!!!!')
     }
@@ -70,28 +72,35 @@ const navigate = useNavigate();
       <Form.Text className="text-success">Please Sign-up here!!!!!</Form.Text>
       <Form>
         <Form.Control
-          name="fullName"
+          name="FirstName"
           onChange={inputHandler}
           className="mb-3 mt-3"
           type="text"
-          placeholder="Enter your full name............"
+          placeholder="Enter your first name............"
         />
         <Form.Control
-          name="email"
+          name="LastName"
+          onChange={inputHandler}
+          className="mb-3 mt-3"
+          type="text"
+          placeholder="Enter your last name............"
+        />
+        <Form.Control
+          name="Email"
           onChange={inputHandler}
           className="mb-3"
           type="email"
           placeholder="Enter your Email Id .............."
         />
         <Form.Control
-          name="mobile"
+          name="PhoneNumber"
           onChange={inputHandler}
           className="mb-3"
           type="number"
-          placeholder="Enter your mobile number............."
+          placeholder="Enter your phone number............."
         />
         <Form.Control
-          name="password"
+          name="Password"
           onChange={inputHandler}
           className="mb-3"
           type="password"
