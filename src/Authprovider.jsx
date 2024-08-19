@@ -11,11 +11,11 @@ const Authprovider = ({children}) => {
 
  
 
-  const userAPI = 'https://the-techie-crud.onrender.com/'
+  const userAPI = 'https://back-end-server-sh16.onrender.com/';
 
   const signUp = async(data) =>
   {
-      const createUser = await axios.post(`${userAPI}user-creation`,data)
+      const createUser = await axios.post(`${userAPI}create-user`,data)
       return createUser.data;
   }
       
@@ -23,8 +23,9 @@ const Authprovider = ({children}) => {
 
   const logIn = async(data) =>
   {
-      const loginUser = await axios.post(`${userAPI}user-login`, data)
-      return (loginUser.data.loginToken)   
+      const loginUser = await axios.post(`${userAPI}login-user`, data)
+      // console.log(loginUser)
+      return (loginUser.data.updatedUser.JwtToken)   
     
   }
 
