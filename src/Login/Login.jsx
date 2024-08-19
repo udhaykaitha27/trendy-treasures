@@ -17,8 +17,8 @@ const Login = () => {
 
 
   const [loginData, setLoginData] = useState({
-    email: '',
-    password: ''
+    Email: '',
+    Password: ''
   })
 
 const inputdataHndlr = (e) => {
@@ -31,7 +31,7 @@ const inputdataHndlr = (e) => {
 
 
   const loginHandler = async() => {
-    if (!loginData.email || !loginData.password)
+    if (!loginData.Email || !loginData.Password)
     {
       return toast.error('Please enter your login Credentials!!!!!!!')
     }
@@ -71,8 +71,8 @@ const inputdataHndlr = (e) => {
     <div className='w-50 m-auto mt-5 border p-4 '>
       <Form >
         <Form.Text className='text-success'>Please Log-in here!!!!!</Form.Text>
-        <Form.Control name='email' onChange={inputdataHndlr} className='mb-3 mt-3 ' type='email' placeholder='Enter your Email Id ..............' />
-        <Form.Control name='password' onChange={inputdataHndlr} className='mb-3 ' type='password' placeholder='Enter your password..............' />
+        <Form.Control name='Email' onChange={inputdataHndlr} className='mb-3 mt-3 ' type='email' placeholder='Enter your Email Id ..............' />
+        <Form.Control name='Password' onChange={inputdataHndlr} className='mb-3 ' type='password' placeholder='Enter your password..............' />
         
         <Button className='mb-3 ' onClick={loginHandler}>Login</Button>
         <br />
